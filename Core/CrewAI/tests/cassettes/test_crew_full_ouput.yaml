@@ -1,0 +1,243 @@
+interactions:
+- request:
+    body: '{"messages": [{"role": "user", "content": "You are test role.\ntest backstory\n\nYour
+      personal goal is: test goalTo give my final answer use the exact following format:\n\n```\nFinal
+      Answer: [my expected final answer, entire content of my most complete final
+      answer goes here]\n```\nI MUST use these formats, my jobs depends on it!\n\nCurrent
+      Task: just say hi!\n\n Begin! This is VERY important to you, your job depends
+      on it!\n\n\n"}], "model": "gpt-4", "n": 1, "stop": ["\nResult"], "stream": true,
+      "temperature": 0.7}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate, br
+      connection:
+      - keep-alive
+      content-length:
+      - '521'
+      content-type:
+      - application/json
+      host:
+      - api.openai.com
+      user-agent:
+      - OpenAI/Python 1.12.0
+      x-stainless-arch:
+      - arm64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - MacOS
+      x-stainless-package-version:
+      - 1.12.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.11.7
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: 'data: {"id":"chatcmpl-8x6vNrtf0qKpk299ZRwX2pR8oyOZc","object":"chat.completion.chunk","created":1709098661,"model":"gpt-4-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"role":"assistant","content":""},"logprobs":null,"finish_reason":null}]}
+
+
+        data: {"id":"chatcmpl-8x6vNrtf0qKpk299ZRwX2pR8oyOZc","object":"chat.completion.chunk","created":1709098661,"model":"gpt-4-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"Final"},"logprobs":null,"finish_reason":null}]}
+
+
+        data: {"id":"chatcmpl-8x6vNrtf0qKpk299ZRwX2pR8oyOZc","object":"chat.completion.chunk","created":1709098661,"model":"gpt-4-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"
+        Answer"},"logprobs":null,"finish_reason":null}]}
+
+
+        data: {"id":"chatcmpl-8x6vNrtf0qKpk299ZRwX2pR8oyOZc","object":"chat.completion.chunk","created":1709098661,"model":"gpt-4-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":":"},"logprobs":null,"finish_reason":null}]}
+
+
+        data: {"id":"chatcmpl-8x6vNrtf0qKpk299ZRwX2pR8oyOZc","object":"chat.completion.chunk","created":1709098661,"model":"gpt-4-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"
+        Hi"},"logprobs":null,"finish_reason":null}]}
+
+
+        data: {"id":"chatcmpl-8x6vNrtf0qKpk299ZRwX2pR8oyOZc","object":"chat.completion.chunk","created":1709098661,"model":"gpt-4-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"!"},"logprobs":null,"finish_reason":null}]}
+
+
+        data: {"id":"chatcmpl-8x6vNrtf0qKpk299ZRwX2pR8oyOZc","object":"chat.completion.chunk","created":1709098661,"model":"gpt-4-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{},"logprobs":null,"finish_reason":"stop"}]}
+
+
+        data: [DONE]
+
+
+        '
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 85c651289e4901c2-GRU
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/event-stream
+      Date:
+      - Wed, 28 Feb 2024 05:37:41 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=l868Q2j0y1hEh_PyWbaEvyTSK_.xOIvrr6NOCGhTWOs-1709098661-1.0-AcmzcQgeapeNgYWJafurm0jZWKoXZcTElp7cKuollHPUXu89+ZMZ7C+cuD743jI6ZAjoMKnWILI6RpaTc+HijqI=;
+        path=/; expires=Wed, 28-Feb-24 06:07:41 GMT; domain=.api.openai.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=jv_tDbSPpAoMExt5fhPfzf1WpwjAwVWmq6ao6tfaPKg-1709098661891-0.0-604800000;
+        path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      openai-model:
+      - gpt-4-0613
+      openai-organization:
+      - crewai-iuxna1
+      openai-processing-ms:
+      - '381'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '10000'
+      x-ratelimit-limit-tokens:
+      - '300000'
+      x-ratelimit-remaining-requests:
+      - '9999'
+      x-ratelimit-remaining-tokens:
+      - '299889'
+      x-ratelimit-reset-requests:
+      - 6ms
+      x-ratelimit-reset-tokens:
+      - 22ms
+      x-request-id:
+      - req_c29a9ff74ee32c982c0657b336101735
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"messages": [{"role": "user", "content": "You are test role.\ntest backstory\n\nYour
+      personal goal is: test goalTo give my final answer use the exact following format:\n\n```\nFinal
+      Answer: [my expected final answer, entire content of my most complete final
+      answer goes here]\n```\nI MUST use these formats, my jobs depends on it!\n\nCurrent
+      Task: just say hello!\nThis is the context you''re working with:\nHi!\n\n Begin!
+      This is VERY important to you, your job depends on it!\n\n\n"}], "model": "gpt-4",
+      "n": 1, "stop": ["\nResult"], "stream": true, "temperature": 0.7}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate, br
+      connection:
+      - keep-alive
+      content-length:
+      - '571'
+      content-type:
+      - application/json
+      cookie:
+      - __cf_bm=l868Q2j0y1hEh_PyWbaEvyTSK_.xOIvrr6NOCGhTWOs-1709098661-1.0-AcmzcQgeapeNgYWJafurm0jZWKoXZcTElp7cKuollHPUXu89+ZMZ7C+cuD743jI6ZAjoMKnWILI6RpaTc+HijqI=;
+        _cfuvid=jv_tDbSPpAoMExt5fhPfzf1WpwjAwVWmq6ao6tfaPKg-1709098661891-0.0-604800000
+      host:
+      - api.openai.com
+      user-agent:
+      - OpenAI/Python 1.12.0
+      x-stainless-arch:
+      - arm64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - MacOS
+      x-stainless-package-version:
+      - 1.12.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.11.7
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: 'data: {"id":"chatcmpl-8x6vOxu9SxkG3t54pHLQT2Pt0iQ63","object":"chat.completion.chunk","created":1709098662,"model":"gpt-4-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"role":"assistant","content":""},"logprobs":null,"finish_reason":null}]}
+
+
+        data: {"id":"chatcmpl-8x6vOxu9SxkG3t54pHLQT2Pt0iQ63","object":"chat.completion.chunk","created":1709098662,"model":"gpt-4-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"Final"},"logprobs":null,"finish_reason":null}]}
+
+
+        data: {"id":"chatcmpl-8x6vOxu9SxkG3t54pHLQT2Pt0iQ63","object":"chat.completion.chunk","created":1709098662,"model":"gpt-4-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"
+        Answer"},"logprobs":null,"finish_reason":null}]}
+
+
+        data: {"id":"chatcmpl-8x6vOxu9SxkG3t54pHLQT2Pt0iQ63","object":"chat.completion.chunk","created":1709098662,"model":"gpt-4-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":":"},"logprobs":null,"finish_reason":null}]}
+
+
+        data: {"id":"chatcmpl-8x6vOxu9SxkG3t54pHLQT2Pt0iQ63","object":"chat.completion.chunk","created":1709098662,"model":"gpt-4-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"
+        Hello"},"logprobs":null,"finish_reason":null}]}
+
+
+        data: {"id":"chatcmpl-8x6vOxu9SxkG3t54pHLQT2Pt0iQ63","object":"chat.completion.chunk","created":1709098662,"model":"gpt-4-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"!"},"logprobs":null,"finish_reason":null}]}
+
+
+        data: {"id":"chatcmpl-8x6vOxu9SxkG3t54pHLQT2Pt0iQ63","object":"chat.completion.chunk","created":1709098662,"model":"gpt-4-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{},"logprobs":null,"finish_reason":"stop"}]}
+
+
+        data: [DONE]
+
+
+        '
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 85c6512e293d01c2-GRU
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/event-stream
+      Date:
+      - Wed, 28 Feb 2024 05:37:42 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      openai-model:
+      - gpt-4-0613
+      openai-organization:
+      - crewai-iuxna1
+      openai-processing-ms:
+      - '159'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '10000'
+      x-ratelimit-limit-tokens:
+      - '300000'
+      x-ratelimit-remaining-requests:
+      - '9999'
+      x-ratelimit-remaining-tokens:
+      - '299876'
+      x-ratelimit-reset-requests:
+      - 6ms
+      x-ratelimit-reset-tokens:
+      - 24ms
+      x-request-id:
+      - req_06762f5bedd260cb2740a35c45c78e4e
+    status:
+      code: 200
+      message: OK
+version: 1

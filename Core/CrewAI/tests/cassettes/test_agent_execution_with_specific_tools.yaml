@@ -1,0 +1,230 @@
+interactions:
+- request:
+    body: '{"messages": [{"role": "user", "content": "You are test role.\ntest backstory\n\nYour
+      personal goal is: test goalTo complete the task you MUST follow the format:\n\n```\nFinal
+      Answer: [your most complete final answer goes here]\n``` You must use these
+      formats, my life depends on it.This is the summary of your work so far:\nBegin!
+      This is VERY important to you, your job depends on it!\n\nCurrent Task: What
+      is 3 times 4\n"}], "model": "gpt-4", "n": 1, "stop": ["\nResult"], "stream":
+      true, "temperature": 0.7}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate, br
+      connection:
+      - keep-alive
+      content-length:
+      - '511'
+      content-type:
+      - application/json
+      host:
+      - api.openai.com
+      user-agent:
+      - OpenAI/Python 1.12.0
+      x-stainless-arch:
+      - arm64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - MacOS
+      x-stainless-package-version:
+      - 1.12.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.11.7
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: 'data: {"id":"chatcmpl-8uAN3ZtdzWEuH23HGRoPRRtzvfGBZ","object":"chat.completion.chunk","created":1708396925,"model":"gpt-4-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"role":"assistant","content":""},"logprobs":null,"finish_reason":null}]}
+
+
+        data: {"id":"chatcmpl-8uAN3ZtdzWEuH23HGRoPRRtzvfGBZ","object":"chat.completion.chunk","created":1708396925,"model":"gpt-4-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"Final"},"logprobs":null,"finish_reason":null}]}
+
+
+        data: {"id":"chatcmpl-8uAN3ZtdzWEuH23HGRoPRRtzvfGBZ","object":"chat.completion.chunk","created":1708396925,"model":"gpt-4-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"
+        Answer"},"logprobs":null,"finish_reason":null}]}
+
+
+        data: {"id":"chatcmpl-8uAN3ZtdzWEuH23HGRoPRRtzvfGBZ","object":"chat.completion.chunk","created":1708396925,"model":"gpt-4-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":":"},"logprobs":null,"finish_reason":null}]}
+
+
+        data: {"id":"chatcmpl-8uAN3ZtdzWEuH23HGRoPRRtzvfGBZ","object":"chat.completion.chunk","created":1708396925,"model":"gpt-4-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"
+        "},"logprobs":null,"finish_reason":null}]}
+
+
+        data: {"id":"chatcmpl-8uAN3ZtdzWEuH23HGRoPRRtzvfGBZ","object":"chat.completion.chunk","created":1708396925,"model":"gpt-4-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{"content":"12"},"logprobs":null,"finish_reason":null}]}
+
+
+        data: {"id":"chatcmpl-8uAN3ZtdzWEuH23HGRoPRRtzvfGBZ","object":"chat.completion.chunk","created":1708396925,"model":"gpt-4-0613","system_fingerprint":null,"choices":[{"index":0,"delta":{},"logprobs":null,"finish_reason":"stop"}]}
+
+
+        data: [DONE]
+
+
+        '
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 858364efbe7e01b0-GRU
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/event-stream
+      Date:
+      - Tue, 20 Feb 2024 02:42:05 GMT
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - __cf_bm=A4_gsEewjfI_cxZT.kzwJOFlNMwGcVQ79F2fvRwT0GU-1708396925-1.0-Acz2vnKqtu4QQDdoAEAvUGGWPfgH2233lNKW2S0hpo4P7GLtP1zHbDcmpxbJKfZnVlmOgzQjlTUGTtkAn4jqBOc=;
+        path=/; expires=Tue, 20-Feb-24 03:12:05 GMT; domain=.api.openai.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=jbzd0_VB5OSlOP6ehIcdvPI61zEtxDnSKYD1UiuNCFw-1708396925948-0.0-604800000;
+        path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      openai-model:
+      - gpt-4-0613
+      openai-organization:
+      - crewai-iuxna1
+      openai-processing-ms:
+      - '261'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '10000'
+      x-ratelimit-limit-tokens:
+      - '300000'
+      x-ratelimit-remaining-requests:
+      - '9999'
+      x-ratelimit-remaining-tokens:
+      - '299890'
+      x-ratelimit-reset-requests:
+      - 6ms
+      x-ratelimit-reset-tokens:
+      - 22ms
+      x-request-id:
+      - req_5d13f96a4d7cb8b5c7b58fc21d96c80f
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"messages": [{"role": "user", "content": "Progressively summarize the
+      lines of conversation provided, adding onto the previous summary returning a
+      new summary.\n\nEXAMPLE\nCurrent summary:\nThe human asks what the AI thinks
+      of artificial intelligence. The AI thinks artificial intelligence is a force
+      for good.\n\nNew lines of conversation:\nHuman: Why do you think artificial
+      intelligence is a force for good?\nAI: Because artificial intelligence will
+      help humans reach their full potential.\n\nNew summary:\nThe human asks what
+      the AI thinks of artificial intelligence. The AI thinks artificial intelligence
+      is a force for good because it will help humans reach their full potential.\nEND
+      OF EXAMPLE\n\nCurrent summary:\n\n\nNew lines of conversation:\nHuman: What
+      is 3 times 4\nAI: 12\n\nNew summary:"}], "model": "gpt-4", "n": 1, "stream":
+      false, "temperature": 0.7}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate, br
+      connection:
+      - keep-alive
+      content-length:
+      - '871'
+      content-type:
+      - application/json
+      cookie:
+      - __cf_bm=A4_gsEewjfI_cxZT.kzwJOFlNMwGcVQ79F2fvRwT0GU-1708396925-1.0-Acz2vnKqtu4QQDdoAEAvUGGWPfgH2233lNKW2S0hpo4P7GLtP1zHbDcmpxbJKfZnVlmOgzQjlTUGTtkAn4jqBOc=;
+        _cfuvid=jbzd0_VB5OSlOP6ehIcdvPI61zEtxDnSKYD1UiuNCFw-1708396925948-0.0-604800000
+      host:
+      - api.openai.com
+      user-agent:
+      - OpenAI/Python 1.12.0
+      x-stainless-arch:
+      - arm64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - MacOS
+      x-stainless-package-version:
+      - 1.12.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.11.7
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: !!binary |
+        IRQIACBK2nT3Muk0P0HircDgoOmp5f+7CW4f72isiqKxeOJlYRhgAfeiNUQjzuZGxZCcdyiyGfn8
+        9lcAnL9Tgm+zl/7NeB2OhpXDYraaq5dXv324/dmO3mx/+H39eaI3DhkIgO51od56SRS5GOi5sxSI
+        XD6n3imR1skoH1fjrALfGPeuNCU49X1YhEmV5lKzMzd/Ux0l7gQA/M5aAPveDymRBKvghcEoiT8B
+        bJ1WlOBL1827/sX2DAiVtHVDEjyfKTSI2H3pll2Pjz0rO+gdHD4c5CiftYHizdgrO0jBNvne4XPe
+        z5BmEXXC/8rtaTf1rXvtKGEHrTFI+GY8FdeaoQS73vktvH8BPBihPtzrEX3rjO+ferdUtqNEWozP
+        MmjvCoNk6ah8j0AFc9M6EVpixuAfeZrM7VS1vp3bJG0HrcW/MAAD
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 858364f3f9c101b0-GRU
+      Cache-Control:
+      - no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - br
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 20 Feb 2024 02:42:07 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      alt-svc:
+      - h3=":443"; ma=86400
+      openai-model:
+      - gpt-4-0613
+      openai-organization:
+      - crewai-iuxna1
+      openai-processing-ms:
+      - '737'
+      openai-version:
+      - '2020-10-01'
+      strict-transport-security:
+      - max-age=15724800; includeSubDomains
+      x-ratelimit-limit-requests:
+      - '10000'
+      x-ratelimit-limit-tokens:
+      - '300000'
+      x-ratelimit-remaining-requests:
+      - '9999'
+      x-ratelimit-remaining-tokens:
+      - '299798'
+      x-ratelimit-reset-requests:
+      - 6ms
+      x-ratelimit-reset-tokens:
+      - 40ms
+      x-request-id:
+      - req_afa9aab4213989f7a5f167139b479a8c
+    status:
+      code: 200
+      message: OK
+version: 1
